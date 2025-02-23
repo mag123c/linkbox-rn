@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "LinkboxAPK",
-    "slug": "LinkboxAPK",
+    "name": "링크박스",
+    "slug": "Linkbox",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -9,7 +9,7 @@
     "newArchEnabled": true,
     "splash": {
       "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
+      "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
     "ios": {
@@ -19,10 +19,18 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.diehreo.LinkboxAPK"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": ["expo-secure-store"],
+    "extra": {
+      "API_BASE_URL": "https://linkbox.mag123c.com/api/v1",
+      "eas": {
+        "projectId": "2f6f917c-9095-4fb2-b4e5-41819e249832"
+      }
     }
   }
 }
